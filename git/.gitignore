@@ -1,0 +1,10 @@
+.DS_Store
+*.tmproj
+.gorc
+.powrc
+.bin
+.bundle
+config/*.key
+config/*.crt
+NOTES.md
+DEV_LOG.md

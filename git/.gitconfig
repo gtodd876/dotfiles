@@ -1,0 +1,40 @@
+[user]
+	name = Andrew Cox 
+	email = andrew@andrewcox.org 
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[alias]
+	ci = commit
+	stat = status
+	co = checkout
+	pr = pull-request
+	prd = pull-request -b dev
+
+	# Get the current branch name (not so useful in itself, but used in
+	# other aliases)
+	branch-name = "!git rev-parse --abbrev-ref HEAD"
+	# Push the current branch to the remote "origin", and set it to track
+	# the upstream branch
+	publish = "!git push -u origin $(git branch-name)"
+	# Delete the remote version of the current branch
+	unpublish = "!git push origin :$(git branch-name)"
+[core]
+	excludesfile = ~/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[push]
+	default = current
+[pull]
+	rebase = true
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[forever "tools"]
+	base = /Users/cox/dev/forever-tools
+	hooks = /Users/cox/dev/forever-tools/git-template/hooks
+[include]
+	path = /Users/cox/dev/forever-tools/gitconfig.include
+[init]
+	templatedir = /Users/cox/dev/forever-tools/git-template
