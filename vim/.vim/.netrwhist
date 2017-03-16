@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/cox/.gem/ruby/2.3.0/gems/faker-1.5.0'
+let g:netrw_dirhist_2='/Users/cox/.matlab/R2016a'
+let g:netrw_dirhist_3='/Applications/MATLAB_R2016a.app/bin/maci64'
