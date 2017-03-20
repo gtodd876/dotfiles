@@ -12,6 +12,7 @@
 	co = checkout
 	pr = pull-request
 	prd = pull-request -b dev
+	pop = reset HEAD^
 
 	# Get the current branch name (not so useful in itself, but used in
 	# other aliases)
