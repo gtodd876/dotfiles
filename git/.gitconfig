@@ -1,6 +1,6 @@
 [user]
-	name = Andrew Cox 
-	email = andrew@andrewcox.org 
+	name = Todd Matthews 
+	email = gtmatthews@gmail.com 
 [color]
 	diff = auto
 	status = auto
@@ -32,10 +32,3 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
-[forever "tools"]
-	base = /Users/cox/dev/forever-tools
-	hooks = /Users/cox/dev/forever-tools/git-template/hooks
-[include]
-	path = /Users/cox/dev/forever-tools/gitconfig.include
-[init]
-	templatedir = /Users/cox/dev/forever-tools/git-template
