@@ -165,44 +165,7 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 # RVM ------------------------------------------------------
 # if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; fi
 
-# Ruby
 
-## bundler
-alias be="bundle exec"
-alias bo="EDITOR=subl bundle open"
-
-## chruby
-# source /usr/local/opt/chruby/share/chruby/chruby.sh
-# source /usr/local/opt/chruby/share/chruby/auto.sh
-
-# rbenv
-# export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-## Ruby aliases
-
-# Zeus
-alias rcop='rubocop --display-cop-names' 
-alias zrake='zeus rake'
-alias zspec='zeus rspec'
-alias zcuke='zeus cucumber'
-alias ztest='FAIL_FAST=true zspec spec && zcuke && rcop'
-
-# Spring
-alias sspec='spring rspec'
-alias rt='RAILS_ENV=test rake' 
-
-# exercism
-alias ex='ruby -r ../test_helper.rb *_test.rb'
-
-RUBYGEMS_GEMDEPS=-
-
-# tmux 
-source ~/.bin/tmuxinator.bash
-alias tmux="TERM=screen-256color-bce tmux"
-alias tml="tmux list-sessions"
-alias tma="tmux -2 attach -t $1"
-alias tmk="tmux kill-session -t $1"
 
 # added by travis gem
 [ -f /Users/cox/.travis/travis.sh ] && source /Users/cox/.travis/travis.sh
